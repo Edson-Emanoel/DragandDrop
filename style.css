@@ -63,3 +63,19 @@ body {
 .status.red{
     background-color: #b91a0e;
 }
+
+.highlight {
+    background-color: #FD951F08;
+}
+
+.card, .dropzone {
+    transition: 400ms;
+}
+
+.is-dragging {
+    cursor: move;
+}
+
+.over {
+    background-color: #4C4C4C4C;
+}
