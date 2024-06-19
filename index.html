@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400, 600, 700, 800, 900" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="boards">
+        <div class="board">
+            <h3>Há Fazer</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status green"></div>
+                    <div class="content">Fazer vídeos!</div>
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <h3>Em Progresso</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status blue"></div>
+                    <div class="content">Montar o Cubo Mágico!</div>
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <h3>Terminado</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status red"></div>
+                    <div class="content">Arrumar emulador para Resident Evil!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="./script.js"></script>
+
+</body>
+</html>
