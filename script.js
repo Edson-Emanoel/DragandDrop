@@ -1,5 +1,7 @@
 // Help
-function log(message){ log("> " + message) }
+function log(message){ 
+    console.log("> " + message) 
+}
 
 // App
 const cards = document.querySelectorAll('.card')
@@ -15,37 +17,37 @@ cards.forEach(card => {
 
 
 function dragstart(){
-    // log("> CARD: Start dragging")
+    log("> CARD: Start dragging")
 }
 
 function drag(){
-    // log("> CARD: Is dragging")
+    log("> CARD: Is dragging")
 }
 
 function dragend(){
-    // log("> CARD: Stop drag")
+    log("> CARD: Stop drag")
 }
 
 // Local de onde soltar os cards
-dropzones.forEach(dropzone => {
-    dropzone.addEventListener('dragenter,', dragenter)
-    dropzone.addEventListener('dragover', dragover)
-    dropzone.addEventListener('dragleave', dragleave)
-    dropzone.addEventListener('drop', drop)
-})
+// dropzones.forEach(dropzone => {
+//     dropzone.addEventListener('dragenter,', dragenter)
+//     dropzone.addEventListener('dragover', dragover)
+//     dropzone.addEventListener('dragleave', dragleave)
+//     dropzone.addEventListener('drop', drop)
+// })
 
-function dragenter (){
-    log("> Dropzone: Enter in zone")
-}
+// function dragenter (){
+//     log("> Dropzone: Enter in zone")
+// }
 
-function dragover (){
-    log("> Dropzone: Over the zone")
-}
+// function dragover (){
+//     log("> Dropzone: Over the zone")
+// }
 
-function dragleave (){
-    log("> Dropzone: Leave")
-}
+// function dragleave (){
+//     log("> Dropzone: Leave")
+// }
 
-function drop (){
-    log("> Dropzone: Dropped")
-}
+// function drop (){
+//     log("> Dropzone: Dropped")
+// }
