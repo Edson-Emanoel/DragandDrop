@@ -2,9 +2,27 @@ html {
     font-family: 'Nunito';
 }
 
+:root {
+    --preto: #130F0D;
+    --branco: #FFF;
+
+    --maromTrans: #FD951F11;
+    --pretoTrans: #141316;
+    --laranja: #FD951FCC;
+
+    --statusGreen: #23D2AC;
+    --statusBlue: #33ADFF;
+    --statusRed: #b91a0e;
+
+    --destaque: #FD951F08;
+    --acima: #4C4C4C4C;
+
+    --card: #1A1A1C;
+}
+
 body {
-    background-color: #130F0D;
-    color: #FFF;
+    background-color: var(--preto);
+    color: var(--branco);
 }
 
 .boards {
@@ -14,8 +32,8 @@ body {
 }
 
 .board {
-    background-color: #141316;
-    border: 1px solid #FD951F11;
+    background-color: var(--pretoTrans);
+    border: 1px solid var(--maromTrans);
     border-radius: 4px;
 
     margin: 0 16px;
@@ -24,7 +42,7 @@ body {
 .board h3 {
     padding: 16px;
     margin: 0;
-    color: #FD951FCC;
+    color: var(--laranja);
 }
 
 .dropzone{
@@ -34,9 +52,9 @@ body {
 }
 
 .card {
-    background: #1A1A1C;
+    background: var(--card);
     padding: 16px;
-    box-shadow: 0 2px 2px -1px #FD951FCC;
+    box-shadow: 0 2px 2px -1px var(--laranja);
     width: 250px;
     margin: 25px 0;
     border-radius: 4px;
@@ -53,19 +71,19 @@ body {
 }
 
 .status.green{
-    background-color: #23D2AC;
+    background-color: var(--statusGreen);
 }
 
 .status.blue{
-    background-color: #33ADFF;
+    background-color: var(--statusBlue);
 }
 
 .status.red{
-    background-color: #b91a0e;
+    background-color: var(--statusRed);
 }
 
 .highlight {
-    background-color: #FD951F08;
+    background-color: var(--destaque);
 }
 
 .card, .dropzone {
@@ -77,5 +95,5 @@ body {
 }
 
 .over {
-    background-color: #4C4C4C4C;
+    background-color: var(--acima);
 }
